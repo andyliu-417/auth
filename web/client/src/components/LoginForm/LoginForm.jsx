@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 class LoginForm extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -46,6 +48,11 @@ class LoginForm extends React.Component {
               />
             </div>
 
+            <div className="row">
+              <p className="right-align">
+                New to here? <Link to="/signup">Sign Up</Link>
+              </p>
+            </div>
           </form>
         </div>
       </div>
