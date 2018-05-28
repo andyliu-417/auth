@@ -2,7 +2,9 @@ import React from "react";
 
 import "./Login.css";
 import LoginForm from "../../components/LoginForm/LoginForm";
+import Wrapper from "../../components/Wrapper/Wrapper";
 
+@Wrapper
 class Login extends React.Component {
   constructor(props, context) {
     super(props, context);
