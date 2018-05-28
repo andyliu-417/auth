@@ -9,18 +9,15 @@ class Login extends React.Component {
   constructor(props, context) {
     super(props, context);
 
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleChange = this.handleChange.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit() {}
 
-  handleChange() {}
-
   render() {
     return (
       <div className="login-header">
-        <LoginForm onSubmit={this.handleSubmit} onChange={this.handleChange} />
+        <LoginForm onSubmit={this.handleSubmit} onChange={this.props.handleChange} />
       </div>
     );
   }
