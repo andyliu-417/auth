@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-function LoginForm({ onSubmit, onChange }) {
+export default function LoginForm({ onSubmit, onChange }) {
   return (
     <div className="container">
       <div className="card-panel login-panel">
@@ -53,5 +53,3 @@ function LoginForm({ onSubmit, onChange }) {
     </div>
   );
 }
-
-export default LoginForm;
