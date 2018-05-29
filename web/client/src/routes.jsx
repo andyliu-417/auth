@@ -1,24 +1,26 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import App from './containers/App/App';
-import Login from './containers/Login/Login';
-import Signup from './containers/Signup/Signup';
+import Base from "./components/Base/Base";
+import App from "./containers/App/App";
+import Login from "./containers/Login/Login";
+import Signup from "./containers/Signup/Signup";
 
-class Routes extends React.Component{
-	render(){
-		return (
-			<BrowserRouter>
-				<div>
-					{/* <App></App> */}
-					<Switch>
-						<Route path='/login' component={Login}></Route>
-						<Route path='/signup' component={Signup}></Route>
-					</Switch>
-				</div>
-			</BrowserRouter>
-		)
-	}
+class Routes extends React.Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div>
+          <Base />
+          <Switch>
+            <Route exact path="/" component={App} />
+            <Route path="/login" component={Login} />
+            <Route path="/signup" component={Signup} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default Routes;
