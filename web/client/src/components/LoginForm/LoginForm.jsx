@@ -8,6 +8,11 @@ export default function LoginForm({ onSubmit, onChange }) {
       <div className="card-panel login-panel">
         <form className="col s12" action="/" onSubmit={onSubmit}>
           <h4 className="center-align">Login</h4>
+          {errors.summary && (
+            <div className="row">
+              <p className="error-message">{errors.summary}</p>
+            </div>
+          )}
 
           <div className="row">
             <div className="input-field col s12">
@@ -21,6 +26,11 @@ export default function LoginForm({ onSubmit, onChange }) {
               <label htmlFor="email">Email</label>
             </div>
           </div>
+          {errors.email && (
+            <div className="row">
+              <p className="error-message">{errors.email}</p>
+            </div>
+          )}
 
           <div className="row">
             <div className="input-field col s12">
@@ -34,6 +44,11 @@ export default function LoginForm({ onSubmit, onChange }) {
               <label htmlFor="password">Password</label>
             </div>
           </div>
+          {errors.password && (
+            <div className="row">
+              <p className="error-message">{errors.password}</p>
+            </div>
+          )}
 
           <div className="row right-align">
             <input

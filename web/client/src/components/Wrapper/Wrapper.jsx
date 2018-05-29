@@ -8,6 +8,12 @@ export default function Wrapper(Comp) {
       this.handleChange = this.handleChange.bind(this);
     }
 
+    componentDidMount() {
+      this.setState({
+        error: null
+      });
+    }
+
     handleChange(e) {
       const key = e.target.name;
       const val = e.target.value;

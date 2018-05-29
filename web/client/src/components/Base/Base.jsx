@@ -8,7 +8,7 @@ export default function Base() {
     <div>
       <nav className="nav-bar indigo lighten-1">
         <div className="nav-wrapper">
-          <a href="/" className="brand-logo">
+          <a href="/" className="brand-logo center">
             Base
           </a>
           <ul id="nav-mobile" className="right">
