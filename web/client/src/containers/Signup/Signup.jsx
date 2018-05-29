@@ -13,11 +13,14 @@ class Signup extends React.Component {
 
   handleSubmit() {}
 
-
   render() {
     return (
       <div className="signup-header">
-        <SignupForm onSubmit={this.handleSubmit} onChange={this.props.handleChange} />
+        <SignupForm
+          onSubmit={this.handleSubmit}
+          onChange={this.props.handleChange}
+          errors={this.props.errors}
+        />
       </div>
     );
   }
