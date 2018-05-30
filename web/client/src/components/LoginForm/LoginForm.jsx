@@ -2,15 +2,15 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-export default function LoginForm({ onSubmit, onChange }) {
+export default function LoginForm({ onSubmit, onChange, errors }) {
   return (
     <div className="container">
       <div className="card-panel login-panel">
         <form className="col s12" action="/" onSubmit={onSubmit}>
           <h4 className="center-align">Login</h4>
-          {errors.summary && (
+          {errors && (
             <div className="row">
-              <p className="error-message">{errors.summary}</p>
+              <p className="error-message">{errors}</p>
             </div>
           )}
 
@@ -26,11 +26,11 @@ export default function LoginForm({ onSubmit, onChange }) {
               <label htmlFor="email">Email</label>
             </div>
           </div>
-          {errors.email && (
+          {/* {errors.email && (
             <div className="row">
               <p className="error-message">{errors.email}</p>
             </div>
-          )}
+          )} */}
 
           <div className="row">
             <div className="input-field col s12">
@@ -44,11 +44,11 @@ export default function LoginForm({ onSubmit, onChange }) {
               <label htmlFor="password">Password</label>
             </div>
           </div>
-          {errors.password && (
+          {/* {errors.password && (
             <div className="row">
               <p className="error-message">{errors.password}</p>
             </div>
-          )}
+          )} */}
 
           <div className="row right-align">
             <input

@@ -4,13 +4,17 @@ export default function Wrapper(Comp) {
   return class WrapperComp extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {};
+      this.state = {
+        errors: ""
+      };
       this.handleChange = this.handleChange.bind(this);
     }
 
     componentDidMount() {
+      console.log('wrapper errors');
+      
       this.setState({
-        error: null
+        errors: "error"
       });
     }
 

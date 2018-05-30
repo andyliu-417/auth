@@ -18,9 +18,9 @@ class Login extends React.Component {
     return (
       <div className="login-header">
         <LoginForm
+          errors={this.props.errors}
           onSubmit={this.handleSubmit}
           onChange={this.props.handleChange}
-          errors={this.props.errors}
         />
       </div>
     );

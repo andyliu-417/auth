@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-export default function SignupForm({ onSubmit, onChange }) {
+export default function SignupForm({ onSubmit, onChange, errors }) {
   return (
     <div className="container">
       <div className="card-panel signup-panel">
