@@ -19,7 +19,7 @@ class Signup extends React.Component {
         <SignupForm
           onSubmit={this.handleSubmit}
           onChange={this.props.handleChange}
-          errors={this.props.errors}
+          errors={this.props.state.errors}
         />
       </div>
     );

@@ -8,9 +8,9 @@ export default function SignupForm({ onSubmit, onChange, errors }) {
       <div className="card-panel signup-panel">
         <form className="col s12" action="/" onSubmit={onSubmit}>
           <h4 className="center-align">Signup</h4>
-          {errors.summary && (
+          {errors && (
             <div className="row">
-              <p className="error-message">{errors.summary}</p>
+              <p className="error-message">{errors}</p>
             </div>
           )}
 
@@ -26,11 +26,11 @@ export default function SignupForm({ onSubmit, onChange, errors }) {
               <label htmlFor="email">Email</label>
             </div>
           </div>
-          {errors.email && (
+          {/* {errors.email && (
             <div className="row">
               <p className="error-message">{errors.email}</p>
             </div>
-          )}
+          )} */}
 
           <div className="row">
             <div className="input-field col s12">
@@ -44,11 +44,11 @@ export default function SignupForm({ onSubmit, onChange, errors }) {
               <label htmlFor="password">Password</label>
             </div>
           </div>
-          {errors.password && (
+          {/* {errors.password && (
             <div className="row">
               <p className="error-message">{errors.password}</p>
             </div>
-          )}
+          )} */}
 
           <div className="row">
             <div className="input-field col s12">
