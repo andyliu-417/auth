@@ -11,10 +11,8 @@ export default function Wrapper(Comp) {
     }
 
     componentDidMount() {
-      console.log('wrapper errors');
-      
       this.setState({
-        errors: "error"
+        errors: "errors"
       });
     }
 
